@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>CV USANDO EL IMPUT xd</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/base.css')}}">
+   
+</head>
+<body>
+   
+    <section>
+                           
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspPagina web dinamica</h3>
+        
+    </section>
+
+    <div class="container mt-5">
+       
+        <div >
+            <div >
+                <form id="formulario" >
+                    
+
+                <input id="nombre"  type="text" placeholder="ingrese su nombre">
+
+                <h3>CONTACTO<hr></h3>
+                    <p>telefono: <input id = telefono type="text" size="7"></p>
+                    <p> correo: <input id = correo type="text " size ="15"></p>
+
+                    <p>Nacionalidad: <select id="nacionalidad">
+                        <option value="Perú">Perú</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="España">España</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="EEUU">EEUU</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Francia">Francia</option>
+                        
+                       
+                    </select></p>
+
+                <h3>IDIOMAS<hr></h3>
+                   
+                    <p>Nivel de ingles: </p>
+                        <select id="radio">
+                            <option value="BASICO">basico</option>
+                            <option value="MEDIO">medio</option>
+                            <option value="AVANZADO">avanzado</option>
+                        </select></p>
+                       
+                    </p>
+                    
+                <h3>APTITUDES<hr></h3>
+                   
+                        
+                    <p>1-: <input id = uno type="text" size="20"></p>
+                    <p>2-: <input id = dos type="text " size ="20"></p>
+                    <p>1-: <input id = tres type="text" size="20"></p>
+                    <p>2-: <input id = cuatro type="text " size ="20"></p>
+                    <p>1-: <input id = cinco type="text" size="20"></p>
+
+
+                
+                <h3>HABILIDADES<hr></h3>
+                    <p>1-: <input id = habil1 type="text" size="20"></p>
+                    <p>2-: <input id = habil2 type="text " size ="20"></p>
+                    <p>1-: <input id = habil3 type="text" size="20"></p>
+                    <p>2-: <input id = habil4 type="text " size ="20"></p>
+                    <p>1-: <input id = habil5 type="text" size="20"></p>
+
+                <h3>OTROS DATOS<hr></h3>
+                    <ul>
+                        <label for="nacimiento"> °fecha de nacimiento:</label>
+                        <li> <input id = nacimiento  type="date"></li>
+                        <label for="time"> °Hora :</label>
+                        <li> <input id = time type="time"> </li>
+                    </ul>  
+
+
+                <h3>PERFIL <hr></h3>
+                    <textarea id="perfil" name="perfil"></textarea>       
+
+
+                <h3>EXPERIENCIA LABORAL<hr></h3>
+                   
+                    <h4>LENGUAJES DE PROGRAMACIÓN</h4>
+                    <h4>Tipos de lenguajes</h4>
+                    <select id="lengua" name="test" multiple>
+                        <option>PYTHON</option>
+                        <option>C++</option>
+                        <option>C</option>
+                        <option>Lua</option>
+                        <option>JAVA</option>
+                        <option>Objective-C</option>
+                        <option>Swift</option>
+                        <option>PHP</option>
+                    </select>
+
+
+                <h4>OCUPACION</h4>
+                    <ul>
+                        <li> <input id="ocu1" type="text" size="40"> </li>
+                        <li> <input id="ocu2" type="text" size="40"> </li>
+                        <li> <input id="ocu3" type="text" size="40"> </li>
+                       
+                       
+                    </ul>
+
+                
+
+                <button type="submit">MOSTRAR DATOS</button>
+                </form>
+                <hr>
+
+
+                
+                <h3 id="respuesta" >
+                    
+                </h3>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static',filename='js/base.js')}}" ></script>
+
+</body>
+</html>
